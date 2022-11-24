@@ -1,0 +1,80 @@
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 1rem;
+}
+
+.nav__close{
+    left: 81.2%;
+    position: absolute;
+}
+
+.nav__submenu{
+    background-color: var(--color-almost-white);
+    color: var(--color-medium-gray);
+    font-family: var(--font-epilogue);
+    height: 100%;
+    line-height: 2.5rem;
+
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 35.2%;
+    width: 65vw;
+    padding-top: 1.5rem;
+    margin-right: 5rem;
+}
+
+.nav__ul--father{
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.nav__ul--son, .nav__ul--company{
+    margin-left: 2rem;
+
+    display: none;
+}
+
+.ul__son--img{
+    margin-right: .5rem;
+}
+
+.nav__arrow--down, .nav__arrow--downs{
+    margin-left: 1rem;
+}
+
+.nav__arrow--up, .nav__arrow--ups{
+    margin-left: .75rem;
+    display: none;
+}
+
+.nav__container--buttons{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#login__space{
+    margin-bottom: .8rem;
+    margin-top: 1.2rem;
+}
+
+.nav__button--login{
+    border-radius: 1rem;
+    color: var(--color-medium-gray);
+    font-family: var(--font-epilogue);
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav__button--register{
+    border: solid 2px var(--color-medium-gray);
+    border-radius: 1rem;
+    color: var(--color-medium-gray);
+    font-family: var(--font-epilogue);
+    margin-top: 1rem;
+    padding: .6rem 4rem;
+    text-decoration: none;
+}
