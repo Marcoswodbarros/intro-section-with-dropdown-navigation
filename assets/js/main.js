@@ -3,18 +3,17 @@ var openMobile = document.querySelector(".nav__open");
 var closeMobile = document.querySelector(".nav__close");
 var subMenu = document.querySelector(".nav__submenu");
 
-openMobile.addEventListener("click touchstart", openMenu);
-closeMobile.addEventListener("click touchstart", closeMenu);
-
-function openMenu () {
+openMobile.addEventListener("click", function () {
     closeMobile.style.display = "flex";
     subMenu.style.display = "inline";
-}
+});
 
-function closeMenu () {
+
+closeMobile.addEventListener("click", function () {
     closeMobile.style.display = "none";
     subMenu.style.display = "none";
-}
+});
+
 
 
 // Submenu arrows
@@ -28,32 +27,31 @@ var arrowUp = document.querySelector(".nav__arrow--up");
 var arrowUps = document.querySelector(".nav__arrow--ups");
 
 // Primeiro submenu
-arrowDown.addEventListener("click touchstart", arrowOpen);
-function arrowOpen () {
+arrowDown.addEventListener("click", function () {
     subList.style.display = "block";
     arrowUp.style.display = "inline";
     arrowDown.style.display = "none";
-}
+});
 
-arrowUp.addEventListener("click touchstart", arrowClose);
-function arrowClose () {
+
+arrowUp.addEventListener("click", function () {
     subList.style.display = "none";
     arrowUp.style.display = "none";
     arrowDown.style.display = "inline";
-}
+});
+
 
 
 // Segundo submenu
-arrowDowns.addEventListener("click touchstart", arrowTop);
-function arrowTop () {
+arrowDowns.addEventListener("click", function () {
     companyList.style.display = "block";
     arrowUps.style.display = "inline";
     arrowDowns.style.display = "none";
-}
+});
 
-arrowUps.addEventListener("click touchstart", arrowbottom)
-function arrowbottom () {
+
+arrowUps.addEventListener("click", function () {
     companyList.style.display = "none";
     arrowUps.style.display = "none";
     arrowDowns.style.display = "inline";
-}
+})
