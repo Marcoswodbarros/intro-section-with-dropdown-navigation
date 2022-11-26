@@ -1,17 +1,13 @@
 // Menu
-var openMobile = document.querySelector(".nav__open");
-var closeMobile = document.querySelector(".nav__close");
-var subMenu = document.querySelector(".nav__submenu");
-
-openMobile.addEventListener("click", function () {
-    closeMobile.style.display = "flex";
-    subMenu.style.display = "inline";
+var openMobile = document.querySelector(".nav__open").addEventListener("click", function () {
+    document.querySelector(".nav__close").style.display = "flex";
+    document.querySelector(".nav__submenu").style.display = "inline";
 });
 
 
-closeMobile.addEventListener("click", function () {
-    closeMobile.style.display = "none";
-    subMenu.style.display = "none";
+var closeMobile = document.querySelector(".nav__close").addEventListener("click", function () {
+    document.querySelector(".nav__close").style.display = "none";
+    document.querySelector(".nav__submenu").style.display = "none";
 });
 
 
@@ -26,13 +22,13 @@ var companyList = document.querySelector(".nav__ul--company");
 var arrowUp = document.querySelector(".nav__arrow--up");
 var arrowUps = document.querySelector(".nav__arrow--ups");
 
+
 // Primeiro submenu
 arrowDown.addEventListener("click", function () {
     subList.style.display = "block";
     arrowUp.style.display = "inline";
     arrowDown.style.display = "none";
 });
-
 
 arrowUp.addEventListener("click", function () {
     subList.style.display = "none";
@@ -41,14 +37,12 @@ arrowUp.addEventListener("click", function () {
 });
 
 
-
 // Segundo submenu
 arrowDowns.addEventListener("click", function () {
     companyList.style.display = "block";
     arrowUps.style.display = "inline";
     arrowDowns.style.display = "none";
 });
-
 
 arrowUps.addEventListener("click", function () {
     companyList.style.display = "none";
